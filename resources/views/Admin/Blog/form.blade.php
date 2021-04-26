@@ -16,8 +16,13 @@
 
                         <div class="col-md-6">
                             <div class="form-group">
+<<<<<<< HEAD
                                 <label for="example-email">العنوان</label>
                                 <input type="text" id="title" name="title" required class="form-control"   >
+=======
+                                <label for="example-email"> صوره </label>
+                                <input type="file" id="image" name="image"  class="form-control"   >
+>>>>>>> 1034e76b31867aad06a845b873c013665204d551
                             </div>
                         </div>
 

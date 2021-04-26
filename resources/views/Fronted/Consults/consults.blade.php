@@ -17,6 +17,7 @@
                             <input type="text" name="name" class="form-control" >
                         </div>
                         <div class="form-group">
+<<<<<<< HEAD
                             <label for="exampleInputPassword1">{{trans('nedal.phone')}}</label>
                             <input type="text" name="phone" class="form-control" >
                         </div>
@@ -27,6 +28,18 @@
                         <div class="form-group">
                             <label for="exampleInputPassword1"> {{trans('nedal.write_ur_consult')}}</label>
                             <textarea rows="12" name="topic" class="form-control" ></textarea>
+=======
+                            <label for="exampleInputPassword1">رقم الهاتف</label>
+                            <input type="text" required name="phone" class="form-control" >
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">البريد الإلكتروني</label>
+                            <input type="email" required name="email" class="form-control" >
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">اكتب استشارتك</label>
+                            <textarea rows="12" required name="topic" class="form-control" ></textarea>
+>>>>>>> 1034e76b31867aad06a845b873c013665204d551
                         </div>
                         <button id="save" class="moreService">{{trans('nedal.send')}}</button>
                     </form>
@@ -61,8 +74,7 @@
                     swal(data.message, {
                         icon: "success",
                     });
-                    location.href='{{route('consults.requestConsults')}}';
-                    $('#NewsForm')[0].reset();
+                    $('#consult')[0].reset();
                 }else {
                     swal(data.message, {
                         icon: "error",

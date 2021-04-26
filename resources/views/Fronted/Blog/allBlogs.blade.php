@@ -4,7 +4,11 @@
 @extends('Fronted.layouts.master')
 
 @section('title')
+<<<<<<< HEAD
     {{trans('nedal.legal_advice')}}
+=======
+    المدونة
+>>>>>>> 1034e76b31867aad06a845b873c013665204d551
 @endsection
 
 @section('content')
