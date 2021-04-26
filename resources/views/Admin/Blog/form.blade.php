@@ -15,7 +15,7 @@
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label for="example-email"> صوره </label>
-                                <input type="file" id="image" name="image" required class="form-control"   >
+                                <input type="file" id="image" name="image"  class="form-control"   >
                             </div>
                         </div>
 

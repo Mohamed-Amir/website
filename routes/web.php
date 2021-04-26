@@ -14,10 +14,6 @@
 
 Auth::routes();
 
-Route::group(['prefix' => LaravelLocalization::setLocale(),
-
-    'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath']], function () {
-
 
 
 
@@ -39,4 +35,3 @@ Route::get('/contact_us', 'Contact_usController@contact_us')->name('contact_us.c
 /**blog*/
 Route::get('/allBlogs', 'BlogsController@allBlogs')->name('blog.allBlogs');
 Route::get('/singleBlog/{id}', 'BlogsController@singleBlog')->name('blog.singleBlog');
-});

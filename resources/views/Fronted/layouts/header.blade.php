@@ -17,7 +17,7 @@
     <div class="container">
         <div class="col-md-12">
             <div class="logo">
-                <a class="navbar" href="index.html">
+                <a class="navbar" href="/">
                     <img class="retina" src="/Fronted/images/logo.png" alt="logo">
                     <h3>مكتب نضال عطا محامون و مستشارون قانونيون</h3>
                     <p>LAWYERS AND LEGAL CONSULTANTS</p>
@@ -30,8 +30,8 @@
                     <ul class="main">
                         <li><a href="/">الرئيسية</a></li>
                         <li><a href="{{route('General.about')}}">عن المكتب</a></li>
-                        <li><a href="services.html">خدماتنا</a></li>
-                        <li><a href="{{route('blog.allBlogs')}}">نصائح قانونية</a></li>
+                        <li><a href="/">خدماتنا</a></li>
+                        <li><a href="{{route('blog.allBlogs')}}">المدونة</a></li>
                         <li><a href="{{route('contact_us.contact_us')}}">تواصل معنا</a></li>
                     </ul>
                 </div>

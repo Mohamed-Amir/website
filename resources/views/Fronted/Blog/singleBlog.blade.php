@@ -8,7 +8,7 @@
     <div class="image_section">
         <div class="section_background">
             <div class="img_background" >
-                <img src="/images/Blog/{{$blog->image}}" >
+                <img style="width: 741px ;height: 465px" src="/images/Blog/{{$blog->image}}" >
             </div>
         </div>
     </div>

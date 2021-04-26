@@ -18,15 +18,15 @@
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">رقم الهاتف</label>
-                            <input type="text" name="phone" class="form-control" >
+                            <input type="text" required name="phone" class="form-control" >
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">البريد الإلكتروني</label>
-                            <input type="email" name="email" class="form-control" >
+                            <input type="email" required name="email" class="form-control" >
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">اكتب استشارتك</label>
-                            <textarea rows="12" name="topic" class="form-control" ></textarea>
+                            <textarea rows="12" required name="topic" class="form-control" ></textarea>
                         </div>
                         <button id="save" class="moreService">ارسل</button>
                     </form>
@@ -61,8 +61,7 @@
                     swal(data.message, {
                         icon: "success",
                     });
-                    location.href='{{route('consults.requestConsults')}}';
-                    $('#NewsForm')[0].reset();
+                    $('#consult')[0].reset();
                 }else {
                     swal(data.message, {
                         icon: "error",

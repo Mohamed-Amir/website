@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>المحامي نضال</title>
+    <title>@yield('title')</title>
 
     <!--Fav and touch icons-->
     <link rel="icon" href="/Fronted/images/logo.png">

@@ -68,24 +68,12 @@
                 {{--                    </ul>--}}
                 {{--                </li>--}}
 
-                <li class="sidebar-item">
-                    <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)"
-                       aria-expanded="false">
-                        <i class="icon-File-TextImage"></i>
-                        <span class="hide-menu"> اعدادات المدونه </span>
-                    </a>
-                    <ul aria-expanded="false" class="collapse  first-level">
 
-                        @foreach(slidersMainLinks() as $row)
-                            <li class="sidebar-item">
-                                <a class="sidebar-link  waves-effect waves-dark" href="{{route($row[2])}}"
-                                   aria-expanded="false">
-                                    <i class="icon-Administrator"></i>
-                                    <span class="hide-menu">{{$row[1]}}</span>
-                                </a>
-                            </li>
-                        @endforeach
-                    </ul>
+                <li class="sidebar-item">
+                    <a class="sidebar-link  waves-effect waves-dark" href="{{route('Blog.index')}}" aria-expanded="false">
+                        <i class="icon-File-TextImage"></i>
+                        <span class="hide-menu">المدونه </span>
+                    </a>
                 </li>
                 <li class="sidebar-item">
                     <a class="sidebar-link  waves-effect waves-dark" href="{{route('About.index')}}" aria-expanded="false">

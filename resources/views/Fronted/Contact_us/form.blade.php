@@ -14,19 +14,19 @@
                             @csrf
                             <div class="form-group">
                                 <label for="exampleInputEmail1">الإسم</label>
-                                <input type="text" name="name" class="form-control" >
+                                <input type="text" required name="name" class="form-control" >
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">رقم الهاتف</label>
-                                <input type="text" name="phone" class="form-control" >
+                                <input type="text" required name="phone" class="form-control" >
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">البريد الإلكتروني</label>
-                                <input type="email" name="email" class="form-control" >
+                                <input type="email" required name="email" class="form-control" >
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">اكتب استفسارك</label>
-                                <textarea rows="12" name="topic" class="form-control" ></textarea>
+                                <textarea rows="12" required name="topic" class="form-control" ></textarea>
                             </div>
                             <button id="save" class="moreService">ارسل</button>
                         </form>
@@ -49,7 +49,7 @@
             Toset('تم تنفيذ طلبك', 'info', 'تتم مراجعه طلبك ', false);
             var formData = new FormData($('#contact')[0]);
             $.ajax({
-                url: '/api/form',
+                url: '/api/massage',
                 type: "post",
                 data: formData,
                 contentType: false,
@@ -61,13 +61,15 @@
                         swal(data.message, {
                             icon: "success",
                         });
-                        location.href='{{route('contact_us.contact_us')}}';
-                        $('#NewsForm')[0].reset();
+                        $('#contact')[0].reset();
                     }else {
                         swal(data.message, {
                             icon: "error",
                         });
                     }
+                },error : function(e){
+                    $("#save").attr("disabled", false);
+
                 }
             });
         })

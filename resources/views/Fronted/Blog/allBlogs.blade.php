@@ -4,7 +4,7 @@
 @extends('Fronted.layouts.master')
 
 @section('title')
-    النصائح القانونيه
+    المدونة
 @endsection
 
 @section('content')
