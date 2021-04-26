@@ -20,7 +20,7 @@
                 <a class="navbar" href="index.html">
                     <img class="retina" src="/Fronted/images/logo.png" alt="logo">
                     <h3>مكتب نضال عطا محامون و مستشارون قانونيون</h3>
-                    <p>LAWYERS AND LEGAL CONSULTANTS</p>
+                    <p>{{trans('nedal.LAWYERS_AND_LEGAL_CONSULTANTS')}}</p>
                 </a>
             </div>
         </div>
@@ -28,11 +28,11 @@
             <div class="col-md-12">
                 <div class="headerMain">
                     <ul class="main">
-                        <li><a href="/">الرئيسية</a></li>
-                        <li><a href="{{route('General.about')}}">عن المكتب</a></li>
-                        <li><a href="services.html">خدماتنا</a></li>
-                        <li><a href="{{route('blog.allBlogs')}}">نصائح قانونية</a></li>
-                        <li><a href="{{route('contact_us.contact_us')}}">تواصل معنا</a></li>
+                        <li><a href="/">{{trans('main.home')}}</a></li>
+                        <li><a href="{{route('General.about')}}">{{trans('nedal.about_office')}} </a></li>
+                        <li><a href="services.html">{{trans('nedal.our_services')}}</a></li>
+                        <li><a href="{{route('blog.allBlogs')}}">{{trans('nedal.legal_advice')}}</a></li>
+                        <li><a href="{{route('contact_us.contact_us')}}"> {{trans('nedal.contact_us')}}</a></li>
                     </ul>
                 </div>
             </div>

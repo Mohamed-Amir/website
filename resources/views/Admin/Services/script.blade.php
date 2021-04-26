@@ -30,6 +30,7 @@
             {data: 'id', name: 'id'},
             {data: 'logo', name: 'logo'},
             {data: 'service_name', name: 'service_name'},
+            {data: 'service_name_en', name: 'service_name_en'},
             {data: 'action', name: 'action', orderable: false, searchable: false},
         ]
     });
@@ -66,7 +67,9 @@
                 $('#formModel').modal();
 
                 $('#service_name').val(data.service_name);
+                $('#service_name_en').val(data.service_name_en);
                 $('#about_service').val(data.about_service);
+                $('#about_service_en').val(data.about_service_en);
                 $('#id').val(data.id);
             }
         });

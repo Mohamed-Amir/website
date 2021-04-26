@@ -4,7 +4,7 @@
             <div class="col-md-3 footer_item">
                 <div class="footer_item">
                     <img src="/Fronted/images/about_us.png">
-                  <a href="{{route('General.about')}}" ><h1>About us</h1></a>
+                  <a href="{{route('General.about')}}" ><h1>{{trans('nedal.About_us')}}</h1></a>
                 </div>
             </div>
             <div class="col-md-3">

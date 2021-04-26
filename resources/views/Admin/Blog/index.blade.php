@@ -76,7 +76,8 @@
                                         <th class="sorting_asc" tabindex="0" aria-controls="file_export" rowspan="1" colspan="1" aria-sort="ascending" aria-label=" : activate to sort column descending" style="width: 0px;"> </th>
                                         <th>#</th>
                                         <th>صوره</th>
-                                        <th> عنوان</th>
+                                        <th> العنوان</th>
+                                        <th> العنوان بالانجليزيه</th>
                                         <th> الحاله</th>
                                         <th>اختيارات</th>
 

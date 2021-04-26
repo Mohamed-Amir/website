@@ -12,3 +12,6 @@ function get_baseUrl()
 /**
  * @return mixed
  */
+function getLang(){
+    return Request::segment(1);
+}

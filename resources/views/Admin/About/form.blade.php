@@ -23,7 +23,13 @@
                             <div class="form-group">
                                 <label for="example-email">عن المكتب</label>
                                 <textarea type="text" id="about_office" name="about_office"  class="form-control"  required></textarea>
+                            </div>
+                        </div>
 
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="example-email">عن المكتب بالانجليزيه</label>
+                                <textarea type="text" id="about_office_en" name="about_office_en"  class="form-control"  required></textarea>
                             </div>
                         </div>
 

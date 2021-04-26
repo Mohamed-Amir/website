@@ -17,7 +17,9 @@ class CreateServicesTable extends Migration
             $table->bigIncrements('id');
             $table->string('logo')->nullable();
             $table->string('service_name')->nullable();
+            $table->string('service_name_en')->nullable();
             $table->text('about_service')->nullable();
+            $table->text('about_service_en')->nullable();
             $table->timestamps();
         });
     }

@@ -65,6 +65,7 @@
                 $('#formModel').modal();
 
                 $('#about_office').val(data.about_office);
+                $('#about_office_en').val(data.about_office_en);
                 $('#id').val(data.id);
             }
         });

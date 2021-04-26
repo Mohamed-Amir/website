@@ -4,7 +4,7 @@
 @extends('Fronted.layouts.master')
 
 @section('title')
-    النصائح القانونيه
+    {{trans('nedal.legal_advice')}}
 @endsection
 
 @section('content')
@@ -21,13 +21,26 @@
                 <div id="content-1">
                     <div class="content_section container">
                         <div class="row">
+                            @if(getLang() == 'ar')
                             <div class="col-md-4">
                                 <h1 class="header_serv">{{$blogs->title}}</h1>
                             </div>
+                            @else
+                                <div class="col-md-4">
+                                    <h1 class="header_serv">{{$blogs->title_en}}</h1>
+                                </div>
+                            @endif
+                            @if(getLang() == 'ar')
                             <div class="col-md-8">
                                 <p>{{$blogs->content}}</p>
-                          <a href="{{route('blog.singleBlog',$blogs->id)}}"> <button class="moreService">المزيد</button> </a>
+                          <a href="{{route('blog.singleBlog',$blogs->id)}}"> <button class="moreService">{{trans('nedal.more')}}</button> </a>
                             </div>
+                                @else
+                                    <div class="col-md-8">
+                                        <p>{{$blogs->content_en}}</p>
+                                        <a href="{{route('blog.singleBlog',$blogs->id)}}"> <button class="moreService">{{trans('nedal.more')}}</button> </a>
+                                    </div>
+                                @endif
                         </div>
                     </div>
                 </div>
@@ -42,9 +55,13 @@
                 @foreach($blog as $row)
                 <div class="col-md-4">
                     <img src="/images/Blog/{{$row->image}}">
+                    @if(getLang() == 'ar')
                     <p>{{$row->title}}</p>
+                    @else
+                        <p>{{$row->title_en}}</p>
+                    @endif
                     <div class="viewMoreBtn">
-                   <a href="{{route('blog.singleBlog',$row->id)}}" ><button >عرض المزيد</button></a>
+                   <a href="{{route('blog.singleBlog',$row->id)}}" ><button >{{trans('nedal.more')}}</button></a>
                     </div>
                 </div>
                     @endforeach

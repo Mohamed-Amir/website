@@ -83,6 +83,8 @@ class ServiceController extends Controller
      */
     public function save_Services($request,$Services){
         $Services->service_name=$request->service_name;
+        $Services->about_service_en=$request->about_service_en;
+        $Services->service_name_en=$request->service_name_en;
         $Services->about_service=$request->about_service;
         if($request->logo) {
             deleteFile('Services',$Services->logo);

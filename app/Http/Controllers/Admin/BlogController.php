@@ -83,7 +83,9 @@ class BlogController extends Controller
      */
     public function save_blog($request,$Blog){
         $Blog->title=$request->title;
+        $Blog->title_en=$request->title_en;
         $Blog->content=$request->content;
+        $Blog->content_en=$request->content_en;
         $Blog->status=$request->status;
         if($request->image) {
             deleteFile('Blog',$Blog->image);

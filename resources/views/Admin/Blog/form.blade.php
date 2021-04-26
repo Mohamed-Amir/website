@@ -12,21 +12,30 @@
                 <div class="modal-body">
                     <div class="row">
 
-                        <div class="col-md-4">
+
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="example-email">العنوان</label>
+                                <input type="text" id="title" name="title" required class="form-control"   >
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="example-email">العنوان بالانجليزيه</label>
+                                <input type="text" id="title_en" name="title_en" required class="form-control"   >
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
                             <div class="form-group">
                                 <label for="example-email"> صوره </label>
                                 <input type="file" id="image" name="image" required class="form-control"   >
                             </div>
                         </div>
 
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="example-email">عنوان</label>
-                                <input type="text" id="title" name="title" required class="form-control"   >
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <div class="form-group">
                                 <label for="example-email">عرض كنصيحه رئيسيه</label>
                                 <select  id="status" name="status"  class="form-control"   >
@@ -40,6 +49,14 @@
                             <div class="form-group">
                                 <label for="example-email">المحتوى</label>
                                 <textarea type="text" id="content" name="content"  class="form-control"  required></textarea>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="example-email">المحتوى بالانجليزيه</label>
+                                <textarea type="text" id="content_en" name="content_en"  class="form-control"  required></textarea>
 
                             </div>
                         </div>

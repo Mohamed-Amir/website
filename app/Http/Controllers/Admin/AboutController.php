@@ -67,6 +67,7 @@ class AboutController extends Controller
             $About->image=saveImage('about',$request->image);
         }
         $About->about_office=$request->about_office;
+        $About->about_office_en=$request->about_office_en;
         $About->save();
     }
 

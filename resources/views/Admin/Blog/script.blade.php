@@ -30,6 +30,7 @@
             {data: 'id', name: 'id'},
             {data: 'image', name: 'image'},
             {data: 'title', name: 'title'},
+            {data: 'title_en', name: 'title_en'},
             {data: 'status', name: 'status'},
             {data: 'action', name: 'action', orderable: false, searchable: false},
         ]
@@ -66,7 +67,9 @@
 
                 $('#formModel').modal();
 
+                $('#title_en').val(data.title_en);
                 $('#title').val(data.title);
+                $('#content_en').val(data.content_en);
                 $('#content').val(data.content);
                 $('#status').val(data.status);
                 $('#id').val(data.id);

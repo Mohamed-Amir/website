@@ -1,10 +1,16 @@
 <html>
+@if(getLang() =='en')
+    <html lang="en">
+    @else
+        <html lang="ar">
+
+        @endif
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>المحامي نضال</title>
+    <title>@yield('title')</title>
 
     <!--Fav and touch icons-->
     <link rel="icon" href="/Fronted/images/logo.png">

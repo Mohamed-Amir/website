@@ -1,7 +1,7 @@
 @extends('Fronted.layouts.master')
 
 @section('title')
-    تواصل معنا
+{{trans('nedal.contact_us')}}
 @endsection
 
 @section('content')
@@ -13,22 +13,22 @@
                         <form id="contact" method="post">
                             @csrf
                             <div class="form-group">
-                                <label for="exampleInputEmail1">الإسم</label>
+                                <label for="exampleInputEmail1">{{trans('nedal.name')}}</label>
                                 <input type="text" name="name" class="form-control" >
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputPassword1">رقم الهاتف</label>
+                                <label for="exampleInputPassword1"> {{trans('nedal.phone')}}</label>
                                 <input type="text" name="phone" class="form-control" >
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputPassword1">البريد الإلكتروني</label>
+                                <label for="exampleInputPassword1"> {{trans('nedal.email')}}</label>
                                 <input type="email" name="email" class="form-control" >
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputPassword1">اكتب استفسارك</label>
+                                <label for="exampleInputPassword1">{{trans('nedal.write_ur_question')}}</label>
                                 <textarea rows="12" name="topic" class="form-control" ></textarea>
                             </div>
-                            <button id="save" class="moreService">ارسل</button>
+                            <button id="save" class="moreService">{{trans('nedal.send')}}</button>
                         </form>
                     </div>
                 </div>

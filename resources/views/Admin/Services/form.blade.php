@@ -12,17 +12,24 @@
                 <div class="modal-body">
                     <div class="row">
 
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <div class="form-group">
                                 <label for="example-email"> صوره </label>
                                 <input type="file" id="logo" name="logo" required class="form-control"   >
                             </div>
                         </div>
 
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <div class="form-group">
                                 <label for="example-email">اسم الخدمه</label>
                                 <input type="text" id="service_name" name="service_name" required class="form-control"   >
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="example-email">اسم الخدمه بالانجليزيه</label>
+                                <input type="text" id="service_name_en" name="service_name_en" required class="form-control"   >
                             </div>
                         </div>
 
@@ -30,7 +37,13 @@
                             <div class="form-group">
                                 <label for="example-email">عن الخدمه</label>
                                 <textarea type="text" id="about_service" name="about_service"  class="form-control"  required></textarea>
+                            </div>
+                        </div>
 
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="example-email">عن الخدمه بالانجليزيه</label>
+                                <textarea type="text" id="about_service_en" name="about_service_en"  class="form-control"  required></textarea>
                             </div>
                         </div>
 
