@@ -70,7 +70,7 @@
                 .append("<option value='bg-danger'>Danger</option>")
                 .append("<option value='bg-success'>Success</option>")
                 .append("<option value='bg-primary'>Primary</option>")
-                .append("<option value='bg-info'>Info</option>")
+                .append("<option value='bg-info'>Main_info</option>")
                 .append("<option value='bg-warning'>Warning</option></div></div>");
             $this.$modal.find('.delete-event').hide().end().find('.save-event').show().end().find('.modal-body').empty().prepend(form).end().find('.save-event').unbind('click').click(function() {
                 form.submit();

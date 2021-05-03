@@ -3663,7 +3663,7 @@
 			}
 			else if ( cOption ==  'i' && features.bInfo )
 			{
-				/* Info */
+				/* Main_info */
 				featureNode = _fnFeatureHtmlInfo( oSettings );
 			}
 			else if ( cOption == 'p' && features.bPaginate )

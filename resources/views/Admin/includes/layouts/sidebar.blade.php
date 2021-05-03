@@ -70,43 +70,30 @@
 
 
                 <li class="sidebar-item">
-                    <a class="sidebar-link  waves-effect waves-dark" href="{{route('Blog.index')}}" aria-expanded="false">
+                    <a class="sidebar-link  waves-effect waves-dark" href="{{route('Videos.index')}}" aria-expanded="false">
+                        <i class="icon-File-Video"></i>
+                        <span class="hide-menu">الفيديوهات </span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a class="sidebar-link  waves-effect waves-dark" href="{{route('User.index')}}" aria-expanded="false">
+                        <i class="icon-File-user"></i>
+                        <span class="hide-menu">الاعضاء </span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a class="sidebar-link  waves-effect waves-dark" href="{{route('Sliders.index')}}" aria-expanded="false">
                         <i class="icon-File-TextImage"></i>
-                        <span class="hide-menu">المدونه </span>
-                    </a>
-                </li>
-                <li class="sidebar-item">
-                    <a class="sidebar-link  waves-effect waves-dark" href="{{route('About.index')}}" aria-expanded="false">
-                        <i class="fa fa-info"></i>
-                        <span class="hide-menu">عن المكتب </span>
+                        <span class="hide-menu">صور السلايدرز </span>
                     </a>
                 </li>
 
                 <li class="sidebar-item">
-                    <a class="sidebar-link  waves-effect waves-dark" href="{{route('Services.index')}}" aria-expanded="false">
-                        <i class="fa fa-briefcase"></i>
-                        <span class="hide-menu">الخدمات </span>
-                    </a>
-                </li>
-
-                <li class="sidebar-item">
-                    <a class="sidebar-link  waves-effect waves-dark" href="{{route('Consults.index')}}" aria-expanded="false">
-                        <i class="fa fa-balance-scale"></i>
-                        <span class="hide-menu">استشارات الزوار </span>
-                    </a>
-                </li>
-
-                <li class="sidebar-item">
-                    <a class="sidebar-link  waves-effect waves-dark" href="{{route('Contact_form.index')}}" aria-expanded="false">
-                        <i class="fa fa-pen-square"></i>
-                        <span class="hide-menu">رسائل الزوار</span>
-                    </a>
-                </li>
-
-                <li class="sidebar-item">
-                    <a class="sidebar-link  waves-effect waves-dark" href="{{route('Contact_us.index')}}" aria-expanded="false">
-                        <i class="fa fa-phone"></i>
-                        <span class="hide-menu">تواصل معنا</span>
+                    <a class="sidebar-link  waves-effect waves-dark" href="{{route('Main_info.index')}}" aria-expanded="false">
+                        <i class="icon-info"></i>
+                        <span class="hide-menu"> معلومات الموقع </span>
                     </a>
                 </li>
                 <!--end main routes section-->

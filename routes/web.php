@@ -24,14 +24,3 @@ Route::get('/', function () {
 /** General pages */
 Route::get('/about', 'GeneralController@about')->name('General.about');
 
-
-
-/**consults*/
-Route::get('/consults', 'ConsultsController@requestConsults')->name('consults.requestConsults');
-
-/**contact_us*/
-Route::get('/contact_us', 'Contact_usController@contact_us')->name('contact_us.contact_us');
-
-/**blog*/
-Route::get('/allBlogs', 'BlogsController@allBlogs')->name('blog.allBlogs');
-Route::get('/singleBlog/{id}', 'BlogsController@singleBlog')->name('blog.singleBlog');

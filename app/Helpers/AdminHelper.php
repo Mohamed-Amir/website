@@ -18,7 +18,7 @@ function getAdminImage($image){
 
 
 function getNameInIndexPage(){
-    return 'Nedal';
+    return 'awesome';
 }
 
 function getCounts($model){

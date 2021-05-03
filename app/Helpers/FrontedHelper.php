@@ -22,15 +22,9 @@ function gePageSection($title){
  * @return mixed
  */
 function about(){
-    return \App\Models\About::first();
+    return \App\Models\Main_info::first();
 }
 
-/**
- * @return mixed
- */
-function contact_us(){
-    return \App\Models\Contact_us::first();
-}
 
 /**
  * @param $limit

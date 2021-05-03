@@ -4009,7 +4009,7 @@
    * See the License for the specific language governing permissions and
    * limitations under the License.
    *
-   * More Info:
+   * More Main_info:
    *  https://code.google.com/p/google-diff-match-patch/
    *
    * Usage: QUnit.diff(expected, actual)

@@ -133,7 +133,7 @@ return [
 	'price'=>"price",
 	'period'=>'period',
 	'days'=>'days',
-	'contactInfo'=>'contact Info',
+	'contactInfo'=>'contact Main_info',
 	'logo'=>'logo',
 	'brand'=>'brands',
 	'products'=>'products',

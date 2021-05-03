@@ -27,60 +27,41 @@ Route::prefix('Admin')->group(function () {
             Route::get('/destroy/{id}', 'AdminController@destroy')->name('Admin.destroy');
         });
 
-        /** Blog */
-        Route::prefix('Blog')->group(function () {
-            Route::get('/index', 'BlogController@index')->name('Blog.index');
-            Route::get('/allData', 'BlogController@allData')->name('Blog.allData');
-            Route::post('/create', 'BlogController@create')->name('Blog.create');
-            Route::get('/edit/{id}', 'BlogController@edit')->name('Blog.edit');
-            Route::post('/update', 'BlogController@update')->name('Blog.update');
-            Route::get('/destroy/{id}', 'BlogController@destroy')->name('Blog.destroy');
+        /** Videos */
+        Route::prefix('Videos')->group(function () {
+            Route::get('/index', 'VideoController@index')->name('Videos.index');
+            Route::get('/allData', 'VideoController@allData')->name('Videos.allData');
+            Route::post('/create', 'VideoController@create')->name('Videos.create');
+            Route::get('/edit/{id}', 'VideoController@edit')->name('Videos.edit');
+            Route::post('/update', 'VideoController@update')->name('Videos.update');
+            Route::get('/destroy/{id}', 'VideoController@destroy')->name('Videos.destroy');
         });
 
-        /** About */
-        Route::prefix('About')->group(function () {
-            Route::get('/index', 'AboutController@index')->name('About.index');
-            Route::get('/allData', 'AboutController@allData')->name('About.allData');
-            Route::get('/edit/{id}', 'AboutController@edit')->name('About.edit');
-            Route::post('/update', 'AboutController@update')->name('About.update');
+        /** User */
+        Route::prefix('User')->group(function () {
+            Route::get('/index', 'UserController@index')->name('User.index');
+            Route::get('/allData', 'UserController@allData')->name('User.allData');
+            Route::get('/destroy/{id}', 'UserController@destroy')->name('User.destroy');
+            Route::get('/show/{id}', 'UserController@show')->name('User.show');
         });
 
-        /** Services */
-        Route::prefix('Services')->group(function () {
-            Route::get('/index', 'ServiceController@index')->name('Services.index');
-            Route::get('/allData', 'ServiceController@allData')->name('Services.allData');
-            Route::post('/create', 'ServiceController@create')->name('Services.create');
-            Route::get('/edit/{id}', 'ServiceController@edit')->name('Services.edit');
-            Route::post('/update', 'ServiceController@update')->name('Services.update');
-            Route::get('/destroy/{id}', 'ServiceController@destroy')->name('Services.destroy');
+        /** Sliders */
+        Route::prefix('Sliders')->group(function () {
+            Route::get('/index', 'SlidersController@index')->name('Sliders.index');
+            Route::get('/allData', 'SlidersController@allData')->name('Sliders.allData');
+            Route::post('/create', 'SlidersController@create')->name('Sliders.create');
+            Route::get('/edit/{id}', 'SlidersController@edit')->name('Sliders.edit');
+            Route::post('/update', 'SlidersController@update')->name('Sliders.update');
+            Route::get('/destroy/{id}', 'SlidersController@destroy')->name('Sliders.destroy');
         });
 
-        /** Consults */
-        Route::prefix('Consults')->group(function () {
-            Route::get('/index', 'ConsultsController@index')->name('Consults.index');
-            Route::get('/allData', 'ConsultsController@allData')->name('Consults.allData');
-            Route::get('/destroy/{id}', 'ConsultsController@destroy')->name('Consults.destroy');
-            Route::get('/show/{id}', 'ConsultsController@show')->name('Consults.show');
-
+        /** Main_info */
+        Route::prefix('Main_info')->group(function () {
+            Route::get('/index', 'Main_infoController@index')->name('Main_info.index');
+            Route::get('/allData', 'Main_infoController@allData')->name('Main_info.allData');
+            Route::get('/edit/{id}', 'Main_infoController@edit')->name('Main_info.edit');
+            Route::post('/update', 'Main_infoController@update')->name('Main_info.update');
         });
-
-        /** Contact_us */
-        Route::prefix('Contact_us')->group(function () {
-            Route::get('/index', 'Contact_usController@index')->name('Contact_us.index');
-            Route::get('/allData', 'Contact_usController@allData')->name('Contact_us.allData');
-            Route::get('/edit/{id}', 'Contact_usController@edit')->name('Contact_us.edit');
-            Route::post('/update', 'Contact_usController@update')->name('Contact_us.update');
-
-        });
-
-        /** Contact_form */
-        Route::prefix('Contact_form')->group(function () {
-            Route::get('/index', 'MassagesController@index')->name('Contact_form.index');
-            Route::get('/allData', 'MassagesController@allData')->name('Contact_form.allData');
-            Route::get('/destroy/{id}', 'MassagesController@destroy')->name('Contact_form.destroy');
-            Route::get('/show/{id}', 'MassagesController@show')->name('Contact_form.show');
-
-        });
-});
+    });
 });
 

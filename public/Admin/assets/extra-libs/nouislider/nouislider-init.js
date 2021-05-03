@@ -252,7 +252,7 @@ $(function() {
     });
 
 
-    // Info
+    // Main_info
     var infoColorSlider = document.getElementById('info-color-slider');
 
     noUiSlider.create(infoColorSlider, {

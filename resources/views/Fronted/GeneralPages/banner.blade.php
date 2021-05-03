@@ -1,11 +1,15 @@
-
-    <div class="slider">
-        <div class="imageSlider">
-            <img src="/Fronted/images/slider.png">
-            <div class="textSlider">
-                <h3>{{trans('nedal.cit')}}</h3>
-                <h1>{{trans('nedal.zien')}}</h1>
-             <a href="{{route('General.about')}}">  <button class="more">{{trans('nedal.more')}}</button></a>
-            </div>
-        </div>
+@php
+$slider = App\Models\Sliders::all();
+@endphp
+<div id="slider">
+    @foreach($slider as $row)
+    <div class="slide" style="background:dodgerBlue;">
+        <img src="/images/Sliders/{{$row->image}}" >
     </div>
+    @endforeach
+    <!--Controlling arrows-->
+    <span class="controls1" onclick="prevSlide(-1)" id="left-arrow"><i class="fa fa-arrow-left" aria-hidden="true"></i>
+            </span>
+    <span class="controls1" id="right-arrow" onclick="nextSlide(1)"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </span>
+</div>

@@ -1,38 +1,14 @@
-<html>
-@if(getLang() =='en')
-    <html lang="en">
-    @else
-        <html lang="ar">
-
-        @endif
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
     <title>@yield('title')</title>
-
-    <!--Fav and touch icons-->
-    <link rel="icon" href="/Fronted/images/logo.png">
-    <link rel="apple-touch-icon" href="/Fronted/images/apple-touch-icon.png">
-    <!--Common Styles Plugins-->
-
-    <link rel="stylesheet" type="text/css" href="/Fronted/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="/Fronted/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="/Fronted/css/animate.css">
-    <link rel="stylesheet" type="text/css" href="/Fronted/css/owl.carousel.css">
-    <link rel="stylesheet" type="text/css" href="/Fronted/css/owl.theme.default.min.css">
-    <link rel="stylesheet" type="text/css" href="/Fronted/css/jquery-ui.min.css">
-    <link rel="stylesheet" type="text/css" href="/Fronted/css/magnific-popup.css">
-
-    <!--Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
-    <!--Custom Style-->
-    <link rel="stylesheet" type="text/css" href="/Fronted/css/style.css">
-    <link rel="stylesheet" type="text/css" href="/Fronted/css/space.css">
-    <link rel="stylesheet" type="text/css" href="/Fronted/css/responsive.css">
-
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.3.15/slick.css"/>
+    <link rel="icon" type="image/x-icon" href="/Fronted/img/favicon.ico"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="/Fronted/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 </head>
 <body>
 
@@ -49,30 +25,10 @@
 @yield('script')
 
 <!--Common JS Plugin-->
-<script type="text/javascript" src="/Fronted/js/jquery-1.12.4.min.js"></script>
-<script type="text/javascript" src="/Fronted/js/jquery-ui.min.js"></script>
-<script type="text/javascript" src="/Fronted/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="/Fronted/js/retina.min.js"></script>
-<script type="text/javascript" src="/Fronted/js/jquery.easing.min.js"></script>
-<script type="text/javascript" src="/Fronted/js/jquery.scrollUp.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.3.15/slick.min.js"></script>
-<script type="text/javascript" src="/Fronted/js/owl.carousel.min.js"></script>
-<script type="text/javascript" src="/Fronted/js/isotope.pkgd.min.js"></script>
-<script type="text/javascript" src="/Fronted/js/imagesloaded.pkgd.min.js"></script>
-<script type="text/javascript" src="/Fronted/js/headroom.min.js"></script>
-<script type="text/javascript" src="/Fronted/js/jQuery.headroom.min.js"></script>
-<script type="text/javascript" src="/Fronted/js/sticky-kit.min.js"></script>
-<script type="text/javascript" src="/Fronted/js/jquery.countdown.min.js"></script>
-<script type="text/javascript" src="/Fronted/js/jquery.waypoints.js"></script>
-<script type="text/javascript" src="/Fronted/js/jquery.magnific-popup.min.js"></script>
-<script type="text/javascript" src="/Fronted/js/jquery.counterup.min.js"></script>
-
-<!-- Google Map -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYMloK_kzsasOQXg-xhGxnwvlAU3HTZWg&libraries=places&center=21.6062004,39.1306194&callback=initMap"
-        async defer></script>
-
-<!-- Custom JS -->
-<script type="text/javascript" src="/Fronted/js/custom.js"></script>
+<script src="/Fronted/js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
 @yield('script')
 </body>
 </html>
