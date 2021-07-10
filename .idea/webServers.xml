@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="ce01f8de-0e77-4174-8e5b-9738af3c68c0" name="handi" url="">
-        <fileTransfer host="vc2030.com" port="21" rootFolder="/nedal.vc2030.com">
+        <fileTransfer host="emir.life" port="21" rootFolder="/public_html/project.emir.life">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>

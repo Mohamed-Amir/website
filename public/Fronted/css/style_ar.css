@@ -88,6 +88,7 @@ section .container .user .formBx form h2 {
   font-size: 14px;
   letter-spacing: 1px;
   font-weight: 300;
+    text-align: right
 }
 
 .section .container .user .formBx form .submitLogin {
@@ -177,7 +178,7 @@ section .container .user .formBx form h2 {
     list-style: none;
 }
 .socialNav li{
-    float: left;
+    float: right;
     color: #fff;
     margin: 0px 10px;
     font-size: 14px;
@@ -186,7 +187,7 @@ section .container .user .formBx form h2 {
     background-color: #027b9a
 }
 .socialNav li i{
-    margin-right: 8px
+    margin-left: 8px
 }
 .navbar-brand img{
     width: 150px
@@ -199,7 +200,7 @@ section .container .user .formBx form h2 {
     padding: 10px 25px !important;
 }
 .btn-login i{
-    margin-right: 8px
+    margin-left: 8px
 }
 
 .navbar,
@@ -294,7 +295,6 @@ section .container .user .formBx form h2 {
 .navbar .navbar-menu {
   display: flex;
   flex-basis: auto;
-  flex-grow: 1;
   align-items: center;
 }
 @media (max-width: 768px) {
@@ -581,7 +581,7 @@ img{
 
 .footer-content-column {
     box-sizing: border-box;
-    float: left;
+    float: right;
     padding-left: 15px;
     padding-right: 15px;
     width: 100%;
@@ -614,7 +614,7 @@ img{
     list-style: none;
     margin-bottom: 0;
     margin-top: 10px;
-    padding-left: 0;
+    padding-right: 0;
 }
 .footer-menu-list li {
     margin-top: 5px;
@@ -681,7 +681,7 @@ img{
     bottom: 0;
     height: 54px;
     position: absolute;
-    right: 0;
+    left: 0;
     width: 236px;
 }
 
@@ -904,7 +904,7 @@ video[poster] {
 .controls .timestamp {
   color: #367ebd;
   font-weight: bold;
-  margin-left: 10px;
+  margin-right: 10px;
 }
 
 @media (min-width: 768px) {
@@ -1033,7 +1033,7 @@ input[type="range"]:focus::-ms-fill-upper {
     list-style: none;
 }
 .questionaier ul li input{
-    margin-right: 10px;
+    margin-left: 10px;
 }
 .questionaier_page{
     padding: 0px;
@@ -1052,7 +1052,7 @@ input[type="range"]:focus::-ms-fill-upper {
 }
 .headerquestionaier span{
     font-size: 18px;
-    float: right;
+    float: left;
     position: relative;
     top: 15px;
 

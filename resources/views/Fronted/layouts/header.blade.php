@@ -21,17 +21,24 @@
                     <span></span>
                     <span></span>
                 </button>
-                <a href="#">
-                    <h4>Awesome<span>logo</span></h4>
+                <a href="/">
+                    <img src="{{getImageUrl('Main_info',about()->logo)}}" style="height: 70px;width: 110px">
                 </a>
             </div>
 
             <div class="navbar-menu" id="open-navbar1">
                 <ul class="navbar-nav">
-                    <li class="active"><a href="/">Home</a></li>
-                    <li><a href="#">questionaier</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><button class="btn btn-login" type="submit"><i class="fa fa-sign-in"></i>LogIn</button></li>
+                    <li @if(isset($active) AND $active ==1) class="active" @endif><a href="/">الرئيسية</a></li>
+                    <li @if(isset($active) AND $active ==5) class="active" @endif><a href="/question">الاستبيان</a></li>
+                    @if(!Auth::check())
+                    <li><button class="btn btn-login" onclick="location.href='/loginForm'" type="button"><i class="fa fa-sign-in"></i>
+                            تسجيل الدخول
+                        </button></li>
+                        @else
+                        <li><button class="btn btn-danger" onclick="location.href='/logout/logout'" type="button"><i class="fa fa-sign-in"></i>
+                                تسجيل الخروج
+                            </button></li>
+                    @endif
                 </ul>
             </div>
         </div>

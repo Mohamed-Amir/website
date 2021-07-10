@@ -22,7 +22,7 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="example-email"> الغلاف </label>
-                                <input type="file" id="cover" name="cover" required class="form-control"   >
+                                <input type="file" id="cover" name="cover"  class="form-control"   >
                             </div>
                         </div>
                         <div class="col-md-6">

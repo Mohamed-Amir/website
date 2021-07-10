@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Fronted;
 
 use App\Interfaces\UserInterface;
+use App\Reposatries\UserReposatry;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Validator,Auth,Artisan,Hash,File,Crypt;
@@ -63,28 +64,24 @@ public function myProfile()
     }
 
 
-
     /**
      * @param Request $request
-     * @return \Illuminate\Http\JsonResponse
+     * @param UserReposatry $reposatry
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\Routing\ResponseFactory|\Illuminate\Http\JsonResponse|\Illuminate\Http\Response
      */
-    public function saveUser(Request $request){
+    public function register (Request $request,UserReposatry $reposatry){
+        $validate_user=$reposatry->validate_user($request,0);
+        if(isset($validate_user)){
+            return $validate_user;
+        }
         $user=new User();
-        $user->first_name=$request->first_name;
-        $user->last_name=$request->last_name;
+        $user->name=$request->name;
         $user->email=$request->email;
         $user->phone=$request->phone;
-        $user->gender=$request->gender;
-        $user->city=$request->city;
-        $user->height=$request->height;
-        $user->weight=$request->weight;
-        $user->desired_weight=$request->desired_weight;
-        $user->current_lifestyle=$request->current_lifestyle;
-        $user->medications=$request->medications;
         $user->password=Hash::make($request->password);
         $user->save();
         Auth::login($user);
-        return response()->json(['status'=>1,'message'=>'registration success']);
+        return response()->json(['status'=>1,'message'=>'تم تسجيل حسابك نجاح']);
     }
 
     /**
