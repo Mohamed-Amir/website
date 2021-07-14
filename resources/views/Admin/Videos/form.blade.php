@@ -28,7 +28,7 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="example-email"> الفيديو </label>
-                                <input type="file" id="video" name="video" required class="form-control"   >
+                                <input type="file" id="video" name="video"  class="form-control"   >
                             </div>
                         </div>
 
@@ -45,7 +45,7 @@
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label for="example-email">وصف بسيط</label>
-                                <textarea type="text" id="simple_desc" name="simple_desc"  class="form-control"  required></textarea>
+                                <textarea type="text" id="simple_desc" name="simple_desc"  class="form-control"  ></textarea>
 
                             </div>
                         </div>

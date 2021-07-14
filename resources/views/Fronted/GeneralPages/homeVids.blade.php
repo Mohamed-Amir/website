@@ -12,7 +12,7 @@
                 @foreach($vids as $row)
                     <div class="col-md-6">
                         <div class="grid--container mb-8 max-h-8 max-w-4xl">
-                            <div class="grid--image" style="background-image: url('{{getImageUrl('Videos_cover',$row->cover)}}');"></div>
+                            <div class="grid--image" style="background-image: url('55');"></div>
                             <div class="grid--content p-8 shadow-2xl">
                                 <h1 class="card--title mb-4 text-4xl font-bold"> {{$row->name}}</h1>
                                 <p class="card--content leading-tight mb-4">{{ substr($row->simple_desc,0,200)}}</p>

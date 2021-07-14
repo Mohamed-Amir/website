@@ -7,7 +7,7 @@
 @section('content')
 
     <div class="videoDiv">
-        <video src="{{getImageUrl('Videos',$video->video)}}" id="video" class="screen" poster="{{getImageUrl('Videos_cover',$video->cover)}}">
+        <video src="{{getImageUrl('Videos',$video->video)}}" " id="video" class="screen" poster="{{getImageUrl('Videos_cover',$video->cover)}}">
         </video>
         <div class="controls">
             <button class="btn" id="play">
